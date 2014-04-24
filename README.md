@@ -1,5 +1,5 @@
-Head estimator
-Controls motors
-Sends messages over OSC
+Head estimator<br>
+Controls motors<br>
+Sends messages over OSC<br>
 
-readme to be written
+<b>readme to be written</b>
