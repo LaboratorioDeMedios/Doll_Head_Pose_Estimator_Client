@@ -34,6 +34,7 @@ public:
     
     void drawPointCloud();
     void drawPoses();
+    void drawHead();
     
     void calcAvgFPS();
     void drawReport();

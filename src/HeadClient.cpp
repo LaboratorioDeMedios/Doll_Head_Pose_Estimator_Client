@@ -222,6 +222,7 @@ void HeadClient::transmitPoses() {
             ofVec3f dir = ofVec3f(0,0,-150);
             dir.rotate(g_means[i][3], g_means[i][4], g_means[i][5]);
             dir += pos;
+            
             //ofLine(pos.x, pos.y, pos.z, dir.x, dir.y, dir.z);
             
             ofxOscMessage m;
@@ -256,7 +257,9 @@ void HeadClient::draw(){
         drawPoses();
     }
     
+    
     easyCam.end();
+    
     
     if (bDrawReport) {
         drawReport();
@@ -272,7 +275,6 @@ void HeadClient::keyPressed(int key){
         case 'c': bDrawCloud = !bDrawCloud; break;
         case 'p': bDrawPoses = !bDrawPoses; break;
         case 'r': bDrawReport = !bDrawReport; break;
-            
     }
 }
 
